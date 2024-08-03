@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/splitwise-application/static/css/main.7622c646.css",
+    "main.js": "/splitwise-application/static/js/main.d050e463.js",
+    "index.html": "/splitwise-application/index.html",
+    "main.7622c646.css.map": "/splitwise-application/static/css/main.7622c646.css.map",
+    "main.d050e463.js.map": "/splitwise-application/static/js/main.d050e463.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7622c646.css",
+    "static/js/main.d050e463.js"
+  ]
+}

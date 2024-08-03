@@ -1,0 +1,93 @@
+.autocomplete {
+    position: relative;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+
+    .textField {
+        border: none;
+        height: 1.8rem;
+        font-size: 16px;
+        margin: 4px;
+        min-width: 60px;
+        flex-grow: 1;
+    }
+
+    .options_input_container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .selected_option {
+        border: 1px solid rgb(212, 209, 209);
+        border-radius: 10px;
+        padding: 2px 5px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        button {
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            height: auto;
+            background-color: transparent;
+            line-height: 0;
+        }
+    }
+
+    .textField:focus {
+        outline: none;
+    }
+
+    .list {
+        background-color: #dff0eb;
+        position: absolute;
+        list-style-type: none;
+        max-height: 300px;
+        margin: 0;
+        margin-top: 5px;
+        overflow-y: scroll;
+        width: 100%;
+        padding: 0;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+        z-index: 10000;
+
+        .listItem {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .selected {
+            background-color: aquamarine;
+        }
+
+        .listItem:hover {
+            margin: 0;
+            background: #dff0eb;
+        }
+
+        .pointed {
+            background-color: rgb(79, 101, 222) !important;
+        }
+    }
+}
+
+.focus {
+    border: 1.5px solid #48be9d;
+}
+
+.disabled {
+    background-color: rgb(104, 104, 105);
+    opacity: 40%;
+    user-select: none;
+}
+
+.autocomplete-label {
+    margin: 0;
+}
